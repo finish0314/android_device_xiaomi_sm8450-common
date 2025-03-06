@@ -68,6 +68,9 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 # Boot control
 $(call soong_config_set, ufsbsg, ufsframework, bsg)
 
+# Bluetooth
+$(call soong_config_set, btservices, use_lhdc, true)
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := taro
 TARGET_NO_BOOTLOADER := true
